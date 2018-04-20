@@ -170,18 +170,20 @@ body {
       color: #777;
       text-align: center;
       letter-spacing: .9rem;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      text-transform: uppercase; }
       .header__nav__item-cart-item-amount {
         z-index: 2;
         position: absolute;
+        display: flex;
+        justify-content: center;
         background-color: red;
-        border-radius: 100%;
-        text-align: center;
+        border-radius: 50%;
         text-decoration: none;
         color: #fff;
         width: 2rem;
         height: 2rem;
-        left: 11.7rem;
+        left: 12.5rem;
         bottom: 2rem; }
       .header__nav__item:hover {
         transform: translateY(-2px);
