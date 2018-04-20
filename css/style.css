@@ -75,6 +75,72 @@ body {
     height: 50rem;
     width: 37rem;
     text-align: center; }
+    @media only screen and (max-width: 1186px) {
+      .items > .item__card {
+        width: 36rem; } }
+    @media only screen and (max-width: 1159px) {
+      .items > .item__card {
+        width: 35rem; } }
+    @media only screen and (max-width: 1125px) {
+      .items > .item__card {
+        width: 34rem; } }
+    @media only screen and (max-width: 1092px) {
+      .items > .item__card {
+        width: 51rem; } }
+    @media only screen and (max-width: 1075px) {
+      .items > .item__card {
+        width: 50rem; } }
+    @media only screen and (max-width: 1055px) {
+      .items > .item__card {
+        width: 49rem; } }
+    @media only screen and (max-width: 1035px) {
+      .items > .item__card {
+        width: 48rem; } }
+    @media only screen and (max-width: 1015px) {
+      .items > .item__card {
+        width: 47rem; } }
+    @media only screen and (max-width: 976px) {
+      .items > .item__card {
+        width: 46rem; } }
+    @media only screen and (max-width: 975px) {
+      .items > .item__card {
+        width: 45rem; } }
+    @media only screen and (max-width: 955px) {
+      .items > .item__card {
+        width: 44rem; } }
+    @media only screen and (max-width: 935px) {
+      .items > .item__card {
+        width: 43rem; } }
+    @media only screen and (max-width: 914px) {
+      .items > .item__card {
+        width: 42rem; } }
+    @media only screen and (max-width: 910px) {
+      .items > .item__card {
+        width: 41rem; } }
+    @media only screen and (max-width: 875px) {
+      .items > .item__card {
+        width: 40rem; } }
+    @media only screen and (max-width: 855px) {
+      .items > .item__card {
+        width: 39rem; } }
+    @media only screen and (max-width: 852px) {
+      .items > .item__card {
+        width: 38rem; } }
+    @media only screen and (max-width: 815px) {
+      .items > .item__card {
+        width: 37rem; } }
+    @media only screen and (max-width: 795px) {
+      .items > .item__card {
+        width: 36rem; } }
+    @media only screen and (max-width: 775px) {
+      .items > .item__card {
+        width: 35rem; } }
+    @media only screen and (max-width: 770px) {
+      .items > .item__card {
+        width: 34rem; } }
+    @media only screen and (max-width: 735px) {
+      .items > .item__card {
+        width: 50rem; } }
 
 @keyframes moveInLeft {
   0% {
@@ -236,13 +302,17 @@ body {
   .item__card-input-amount {
     font-weight: 900;
     font-size: 1rem; }
-  .item__card-input-amount-control {
+  .item__card-input-amount-control, .item__card-input-amount-control:focus {
     width: 6rem;
     background-color: #000000;
+    border: none;
+    box-shadow: none;
     color: #fff;
     text-align: center;
-    border-radius: 2rem;
-    text-decoration: none; }
+    border-radius: .6rem;
+    text-decoration: none;
+    border-color: #000000;
+    cursor: pointer; }
 
 .footer {
   width: 100%;
