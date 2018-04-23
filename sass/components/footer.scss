@@ -19,11 +19,20 @@
       margin-bottom: 2rem;
       font-size: 2rem;
       color: #fff;
+      @media screen and (max-width: 748px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 360px) {
+        line-height: 2rem;
+      }
     }
     &-bottom {
       line-height: 1rem;
       font-size: 2rem;
       color: #fff;
+      @media screen and (max-width: 748px) {
+        font-size: 1em;
+      }
     }
   }
   &__right {
@@ -33,11 +42,32 @@
     &-top {
       font-size: 1.5rem;
       font-weight: 500;
+      @media screen and (max-width: 922px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 748px) {
+        font-size: .9rem;
+      }
+      @media screen and (max-width: 578px) {
+        font-size: .7rem;
+      }
       &-links {
         display: flex;
         &>* {
           margin-left: 4rem;
           margin-top: 2rem;
+          @media screen and (max-width: 748px) {
+            margin-left: 2rem;
+          }
+          @media screen and (max-width: 578px) {
+            margin-left: 1rem;
+          }
+          @media screen and (max-width: 413px) {
+            margin-left: .5rem;
+          }
+          @media screen and (max-width: 360px) {
+            margin-left: .3rem;
+          }
           &:hover {
             cursor: pointer;
           }

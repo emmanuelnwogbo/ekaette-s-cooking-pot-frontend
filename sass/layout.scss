@@ -6,6 +6,9 @@
   min-height: 50rem;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 414px) {
+    margin: 0rem auto;
+  }
   &__header {
     width: 100%;
     align-items: center;
@@ -27,16 +30,39 @@
   width: 100%;
   font-size: 3rem;
   letter-spacing: 2rem;
+  @media screen and (max-width: 795px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 360px) {
+    font-size: 1.9rem;
+    letter-spacing: 1rem;
+  }
+  @media screen and (max-width: 384px) {
+    font-size: 1.9rem;
+    letter-spacing: .8rem;
+  }
 }
 
 .items {
   max-width: 120rem;
-  margin: .7rem auto;
   background-color: var(--color-grey-light-1);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   animation: moveInRight 1s ease-out;
+  @media screen and (max-width: 600px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (max-width: 360px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   &>.item__card {
     margin-top: 1rem;
     margin-left: 2rem;
@@ -44,71 +70,23 @@
     height: 50rem;
     width: 37rem;
     text-align: center;
-    @media only screen and (max-width: 1186px) {
+    @media screen and (max-width: 1024px) {
+      width: 30rem;
+    }
+    @media screen and (max-width: 795px) {
       width: 36rem;
     }
-    @media only screen and (max-width: 1159px) {
+    @media screen and (max-width: 775px) {
       width: 35rem;
     }
-    @media only screen and (max-width: 1125px) {
+    @media screen and (max-width: 755px) {
       width: 34rem;
     }
-    @media only screen and (max-width: 1092px) {
-      width: 51rem;
+    @media screen and (max-width: 735px) {
+      width: 33rem;
     }
-    @media only screen and (max-width: 1075px) {
-      width: 50rem;
-    }
-    @media only screen and (max-width: 1055px) {
-      width: 49rem;
-    }
-    @media only screen and (max-width: 1035px) {
-      width: 48rem;
-    }
-    @media only screen and (max-width: 1015px) {
-      width: 47rem;
-    }
-    @media only screen and (max-width: 976px) {
-      width: 46rem;
-    }
-    @media only screen and (max-width: 975px) {
-      width: 45rem;
-    }
-    @media only screen and (max-width: 955px) {
-      width: 44rem;
-    }
-    @media only screen and (max-width: 935px) {
-      width: 43rem;
-    }
-    @media only screen and (max-width: 914px) {
-      width: 42rem;
-    }
-    @media only screen and (max-width: 910px) {
-      width: 41rem;
-    }
-    @media only screen and (max-width: 875px) {
-      width: 40rem;
-    }
-    @media only screen and (max-width: 855px) {
-      width: 39rem;
-    }
-    @media only screen and (max-width: 852px) {
-      width: 38rem;
-    }
-    @media only screen and (max-width: 815px) {
-      width: 37rem;
-    }
-    @media only screen and (max-width: 795px) {
-      width: 36rem;
-    }
-    @media only screen and (max-width: 775px) {
-      width: 35rem;
-    }
-    @media only screen and (max-width: 770px) {
-      width: 34rem;
-    }
-    @media only screen and (max-width: 735px) {
-      width: 50rem;
+    @media screen and (max-width: 360px) {
+      width: 30rem;
     }
   }
 }

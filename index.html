@@ -15,9 +15,67 @@
 </head>
 
 <body>
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background" id="navigation__background">&nbsp;</div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>01</span>instagram
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>02</span>cart
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
+        <li class="navigation__item" id="navigation__item_contact">
+          <a href="#" class="navigation__link">
+            <span>03</span>contact</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>04</span>jobs</a>
+        </li>
+        <li class="navigation__item" id="navigation__item_about">
+          <a href="#" class="navigation__link" id="navigation__item_about">
+            <span id="navigation__item_about">05</span>about</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="pop_up_background" id="pop_up"></div>
+
+  <form action="" method="get" class="form__modal" id="contact__form">
+    <h2 class="form__modal__header">Contact us</h2>
+    <label for="name">full name</label>
+    <input id="name" type="text" name="name">
+    <label for="email">email</label>
+    <input id="email" type="email" name="email">
+    <label for="message">message</label>
+    <input id="message" type="text" name="message">
+    <a href="#" class="form__modal__submit">submit</a>
+  </form>
+
+  <div class="pop__up__text" id="pop__up__text">
+    hello there
+  </div>
+
   <div class="header">
 
+
     <div class="header__min-1">
+
       <div class="header__min-1__welcome">
         <h1 class="header__min-1__welcome-h1">
           Welcome
@@ -25,39 +83,22 @@
         <h2 class="header__min-1__welcome-h2">
           to Ekaette's cooking pot
         </h2>
-        <a href="#" class="header__min-1__welcome-btn">Discover Our Dishes</a>
+        <a class="header__min-1__welcome-btn" id="header__min-1__welcome-btn">Discover Our Dishes</a>
       </div>
     </div>
 
-    <div class="header__nav">
-      <nav class="header__nav">
-        <div class="header__nav__item">
-          menu
-        </div>
-        <div class="header__nav__item">
-          contact
-        </div>
-        <div class="header__nav__item">
-          about
-        </div>
-        <div class="header__nav__item">
-          cart
-          <i class="fas fa-shopping-cart"></i>
-          <a href="#" class="header__nav__item-cart-item-amount">
-            1
-          </a>
-        </div>
-      </nav>
-    </div>
+
   </div>
   <div class="container">
 
 
     <div class="about__us">
+
       <p class="about__us_paragraph">
         The best Nigerian delicacies that look good and taste great
       </p>
     </div>
+
     <div class="container__header">
       menu
     </div>
@@ -303,6 +344,7 @@
     <footer class="footer">
       <div class="footer__left">
         <div class="footer__left-top">
+          <h2 class="footer__left-top-about-header">About us</h2>
           <p class="footer__left-top-about">
             We are particularly dedicated to showcasing some of the best nigerian delicacies.
           </p>
@@ -318,12 +360,12 @@
         <div class="footer__right-top">
           <div class="footer__right-top-links">
 
-            <div class="contact">contact</div>
+            <div class="contact" id="footer_contact">contact</div>
             <div class="instagram">
               instagram
               <i class="fab fa-instagram"></i>
             </div>
-            <div class="menu">menu</div>
+            <div class="menu" id="footer_menu">menu</div>
             <div class="jobs">jobs</div>
 
           </div>
@@ -336,6 +378,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
